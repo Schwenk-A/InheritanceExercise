@@ -6,23 +6,6 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
-
-            //Extra-- added them all into an Animal folder.
-
-            // Create a class Animal--DONE
-            // give this class 4 members that all Animals have in common //DONE
-
-
-            // Create a class Bird--DONE
-            // give this class 4 members that are specific to Bird //DONE
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile--DONE
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
             Console.WriteLine("Welcome to my very small zoo. Let me take you around,");
             UserChoiceStart();
 
@@ -31,11 +14,7 @@ namespace Inheritance
 
 
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+
         }
 
         public static void UserChoiceStart()
@@ -66,6 +45,7 @@ namespace Inheritance
             Console.WriteLine("I have two birds here Jim and Bob, who would you like to see?");
             var userPickBird = Console.ReadLine().ToLower();
             Console.Clear();
+            //---------------------------------------------------
             Bird baldEagleJim = new Bird();
             baldEagleJim.FeatherColors = "Brown with white on the head";
             baldEagleJim.LifeSpan = 30;
@@ -74,6 +54,7 @@ namespace Inheritance
             Bird parrotBob = new Bird();
             parrotBob.FeatherColors = "Red and Blue";
             parrotBob.LifeSpan = 60;
+            //---------------------------------------------------
             if (userPickBird == "bob")
             {
                 Console.WriteLine($"Ahhh Bob's a cool one, he is a Parrot...\n" +
@@ -114,7 +95,7 @@ namespace Inheritance
             iguanaDan.YearofBirth = 2018;
             iguanaDan.LifeSpan = 15;
 
-
+            //---------------------------------------------------
             Console.WriteLine("Reptiles, living on the wild side i see ");
             Console.WriteLine("I have two Reptiles with me today, Do you want to see Joe or Dan? Or would you like to compare?");
             Console.WriteLine("option 1 Joe");
@@ -122,6 +103,7 @@ namespace Inheritance
             Console.WriteLine("option 3 Compare"); 
             var userinput = Console.ReadLine().ToLower();
             Console.Clear();
+            //---------------------------------------------------
             if (userinput == "joe")
             {
                 Console.WriteLine($"So Joe is an interesting guy, he is a Lizard. As with all reptiles has {lizardJoe.Legs} legs\n" +
